@@ -13,3 +13,9 @@
 .Poppins{
     font-family: var(--Poppins);
 }
+
+.hero-pattern{
+    background-image: url(./testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}

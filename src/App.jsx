@@ -1,16 +1,21 @@
 import { useState } from 'react';
-import {BrowserRouter as Router} from 'react-router-dom'
-// import { Fourcard } from './four-card-feature-section-master/Fourcard';
+import { Navbar } from './Navbar/Navbar';
+import {BrowserRouter, Route, BrowserRouter as Router, Routes} from 'react-router-dom'
+import { Fourcard } from './four-card-feature-section-master/Fourcard';
 import { Testimonialsgrid } from './testimonials-grid-section-main/Testimonialsgrid';
 
 
 function App() {
 
   return (
-      <Router>
-        {/* <Fourcard/> */}
-        <Testimonialsgrid/>
-      </Router>
+      <BrowserRouter>
+      <Routes>
+        <Route  path="/" element={<Navbar />}/>
+        <Route  path="/Fourcard" element={<Fourcard />}/>
+        <Route  path="/Testimonialsgrid" element={<Testimonialsgrid />}/>
+
+      </Routes>
+      </BrowserRouter>
   )
 }
 
